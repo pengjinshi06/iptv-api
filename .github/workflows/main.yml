@@ -51,10 +51,10 @@ jobs:
 
       - name: Sync to Gitee
         uses: Yikun/hub-mirror-action@master
-      with:
-        src: github/pengjinshi06
-        dst: gitee/18680160006
-        dst_key: ${{ secrets.GITEE_TOKEN }}
-        dst_token: ${{ secrets.GITEE_TOKEN }}
-        static_list: "iptv-api"
-        force_update: true
+        with:
+          src: github/pengjinshi06
+          dst: gitee/pulide
+          dst_key: ${{ secrets.GITEE_TOKEN }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
+          static_list: "iptv-api"
+          force_update: true
