@@ -49,6 +49,7 @@ jobs:
             git push --force
           fi
 
+
       - name: Sync to Gitee
         uses: Yikun/hub-mirror-action@master
         with:
@@ -58,3 +59,4 @@ jobs:
           dst_token: ${{ secrets.GITEE_TOKEN }}
           static_list: "iptv-api"
           force_update: true
+          debug: true
